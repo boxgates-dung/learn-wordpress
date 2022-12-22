@@ -1,0 +1,57 @@
+.woocommerce-pagination {
+  .page-numbers li>* {
+    border: 1px solid #000;
+    color: currentColor;
+    display: -ms-inline-flexbox;
+    font-weight: 500 !important;
+    height: 2.25rem;
+    width: 2.25rem;
+  }
+
+  .page-numbers li+li {
+    margin-left: 2px !important;
+  }
+}
+
+// Overight woo paganition
+.woocommerce nav.woocommerce-pagination {
+  ul {
+    border: 0;
+
+    li {
+      border-right: 1px solid #ffffff;
+
+      a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:hover {
+          background: transparent;
+          color: #000;
+        }
+      }
+
+      .next {
+        border: none;
+        background-color: transparent;
+      }
+
+      .prev {
+        border: none;
+        background-color: transparent;
+      }
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.current {
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+.article {
+	margin-bottom: 5.625rem;
+
+	.clt-content-post {
+		padding-right: 1.8rem;
+	}
+
+	.article-heading {
+		color: $color-text;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	figure {
+		margin-bottom: 1.875rem;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.clt-categories-post {
+		font-size: 0.75rem;
+		a.article-category-primary {
+			color: $color-text-desc;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-size: 0.75rem;
+			text-decoration: none;
+		}
+
+		a[rel='tag'] {
+			font-weight: 500;
+			color: var(--color-text);
+			font-size: 0.75rem;
+			text-decoration: none;
+		}
+
+		margin-bottom: 0.625rem;
+		color: $color-text-desc;
+	}
+
+	.article-content {
+		p {
+			color: $color-text-desc;
+		}
+	}
+
+	.clt-des-article {
+		color: $color-text-desc;
+		font-weight: 400;
+
+		a {
+			font-size: 1rem;
+			height: auto;
+			padding: 0;
+			background-color: transparent;
+			border: 0;
+			color: currentColor;
+		}
+	}
+}
+
+#sidebar {
+	.clt-content-sidebar {
+		position: sticky;
+		top: 0;
+	}
+
+	.widget_search {
+		label {
+			width: 100%;
+			font-size: 0.875rem;
+			margin-bottom: 5px;
+		}
+
+		.wp-block-search__inside-wrapper {
+			display: flex;
+			gap: 10px;
+
+			button {
+				padding: 6px 10px;
+			}
+		}
+	}
+
+	.wp-block-group__inner-container h2 {
+		font-size: 1rem;
+		font-weight: 500;
+		border-bottom: 1px solid $color-border;
+		padding-bottom: 0.9375rem;
+		margin-bottom: 1.875rem;
+	}
+
+	ul.wp-block-latest-posts {
+		list-style: none;
+		padding-left: 0;
+		font-size: 0.875rem;
+
+		li {
+			margin-top: 0.5rem;
+			a {
+				color: $color-text;
+				text-decoration: none;
+				display: inline-block;
+
+				&::before {
+					margin-right: 10px;
+					line-height: 1;
+					font-family: 'klbtheme';
+					font-style: normal;
+					font-weight: normal;
+					display: inline-block;
+					text-decoration: inherit;
+					width: 1em;
+					text-align: center;
+					font-variant: normal;
+					text-transform: none;
+					content: '\e850';
+					font-size: 12px;
+				}
+			}
+		}
+	}
+
+	.wp-block-latest-comments {
+		list-style: none;
+		padding-left: 0;
+		font-size: 0.875rem;
+
+		.wp-block-latest-comments__comment {
+			line-height: 1.1;
+			list-style: none;
+			margin-bottom: 1em;
+		}
+
+		.wp-block-latest-comments__comment-meta {
+			a {
+				color: $color-text;
+				font-weight: 500;
+			}
+		}
+	}
+
+	.tagcloud {
+		a {
+			color: #021523;
+			background-color: transparent;
+			border: 1px solid $color-border;
+			height: 2rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+			font-size: 0.875rem !important;
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			margin-bottom: 5px;
+		}
+	}
+
+	.clt-categories-body {
+		li {
+			margin-top: 0.5rem;
+		}
+		a {
+			color: $color-text;
+
+			&::before {
+				margin-right: 10px;
+				text-rendering: auto;
+				line-height: 1;
+				font-family: 'klbtheme';
+				font-style: normal;
+				font-weight: normal;
+				display: inline-block;
+				text-decoration: inherit;
+				width: 1em;
+				text-align: center;
+				font-variant: normal;
+				text-transform: none;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				content: '\e850';
+				font-size: 12px;
+			}
+		}
+	}
+
+	.widget {
+		margin-bottom: 2.5rem;
+		h4 {
+			font-size: 1rem;
+			font-weight: 500;
+			border-bottom: 1px solid $color-border;
+			padding-bottom: 0.9375rem;
+			margin-bottom: 1.875rem;
+		}
+	}
+
+	.widget_categories {
+		ul {
+			font-size: 0.875rem;
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				margin-top: 0.5rem;
+				a {
+					color: $color-text;
+					text-decoration: none;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+.clt-widget-body {
+	.clt-widget-post {
+		display: flex;
+		margin-bottom: 2.5rem;
+		.clt-widget-text {
+			flex: 1;
+			color: $color-text;
+			span {
+				font-size: 0.75rem;
+			}
+			h6 a {
+				color: $color-text;
+			}
+		}
+		figure {
+			-webkit-box-flex: 0;
+			-ms-flex: 0 0 5rem;
+			flex: 0 0 5rem;
+			max-width: 5rem;
+			height: 5rem;
+			margin-right: 1.625rem;
+			margin-bottom: 0;
+		}
+	}
+}

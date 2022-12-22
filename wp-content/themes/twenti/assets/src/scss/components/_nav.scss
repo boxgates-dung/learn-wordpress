@@ -1,0 +1,394 @@
+.clt-mainmenu {
+	list-style: none;
+	margin: 0 !important;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	z-index: 10;
+	position: relative;
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $color-text;
+		display: block;
+		padding: 9px 0;
+
+		&:hover {
+			color: $color-text;
+		}
+	}
+
+	ul.sub-menu {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		border: solid 1px $color-border;
+		box-shadow: 0 4px 20px -8px #00000033;
+		transition: transform 0.2s ease-out;
+		transform: translate3d(0, -10px, 0);
+		z-index: 999;
+
+		li {
+			padding: 0 20px;
+		}
+
+		.sub-menu {
+			left: 100%;
+			top: 0;
+		}
+	}
+
+	>li {
+		>a {
+			color: $color-text;
+			height: 53px;
+			line-height: 53px;
+			text-transform: uppercase;
+			font-size: 15px;
+			font-weight: 500;
+			padding: 0;
+		}
+	}
+
+	li {
+		padding: 0 15px;
+		position: relative;
+
+		&.current-menu-item,
+		&.current-menu-parent,
+		&.current-menu-ancestor {
+			>a {
+				color: $color-text;
+			}
+		}
+
+		&.menu-item-has-children {
+			a:nth-child(1) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+
+			&>a::after {
+				font-family: 'klbtheme';
+				font-size: 70%;
+				content: '\e84e';
+				margin-left: 0.625rem;
+				text-shadow: 0 0 0;
+				transition: all 0.1s;
+			}
+
+			&:hover {
+				>ul {
+					transition: all 0.1s;
+					display: block;
+					transform: translate3d(0, 0, 0);
+					min-width: 215px;
+				}
+
+				>a:nth-child(1)::after {
+					transform: rotate(-90deg);
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: none;
+
+		& {
+			flex: 0 0 auto;
+		}
+	}
+}
+
+.clt-vertical-menu {
+	z-index: 9999;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $color-text;
+		display: block;
+		padding: 9px 0;
+
+		&:hover {
+			color: $color-text;
+		}
+	}
+
+	ul.sub-menu {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		max-width: 0;
+		overflow: hidden;
+		transition: all 0.1s;
+		position: absolute;
+		top: 0;
+		left: 100%;
+		box-shadow: 0 4px 20px -8px #00000033;
+
+		z-index: 999;
+	}
+
+	li {
+		&.menu-item {
+			a {
+				padding-left: 10px;
+			}
+		}
+
+		&.menu-item-has-children {
+			position: relative;
+
+			a:nth-child(1) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-right: 1.625rem;
+			}
+
+			&>a::after {
+				font-family: 'klbtheme';
+				font-size: 70%;
+				content: '\e84e';
+				margin-left: 0.625rem;
+				text-shadow: 0 0 0;
+				transition: all 0.1s;
+			}
+
+			&:hover {
+				>ul {
+					transition: all 0.1s;
+					display: block;
+					transform: translate3d(0, 0, 0);
+					min-width: 215px;
+					overflow: visible;
+				}
+
+				>a:nth-child(1)::after {
+					transform: rotate(-90deg);
+				}
+			}
+		}
+
+		&:hover {
+			& {
+				outline: solid 1px $color-border;
+			}
+		}
+	}
+}
+
+.clt-canvas-menu {
+	z-index: 9999;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $color-text;
+		display: block;
+		padding: 9px 0;
+
+		&:hover {
+			color: $color-text;
+		}
+	}
+
+	ul.sub-menu {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		max-height: 0;
+		overflow: hidden;
+		transition: all 0.3s;
+		z-index: 999;
+	}
+
+	li {
+		&.menu-item {
+			a {
+				padding-left: 10px;
+			}
+		}
+
+		&.menu-item-has-children {
+			position: relative;
+
+			a:nth-child(1) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-right: 1.625rem;
+			}
+
+			&>a::after {
+				font-family: 'klbtheme';
+				font-size: 70%;
+				content: '\e84e';
+				margin-left: 0.625rem;
+				text-shadow: 0 0 0;
+				transition: all 0.1s;
+			}
+
+			&:hover {
+				>ul {
+					overflow: visible;
+					max-height: 600px;
+					transition: all 0.3s;
+				}
+
+				>a:nth-child(1)::after {
+					transform: rotate(-90deg);
+				}
+			}
+		}
+	}
+}
+
+// Sidebar nav
+.clt-categories-menu {
+	z-index: 9999;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	a {
+		color: $color-text;
+		display: block;
+		padding: 9px 0;
+
+		&:hover {
+			color: $color-text;
+		}
+	}
+
+	ul.sub-menu {
+		display: none;
+	}
+
+	li {
+		&.menu-item {
+			a {
+				padding-left: 10px;
+			}
+		}
+
+		&.menu-item-has-children {
+			position: relative;
+
+			a:nth-child(1) {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-right: 1.625rem;
+			}
+
+			&>a::after {
+				font-family: 'klbtheme';
+				font-size: 70%;
+				content: '\e84e';
+				margin-left: 0.625rem;
+				text-shadow: 0 0 0;
+				transition: all 0.1s;
+			}
+		}
+
+		&.current-product_cat-ancestor,
+		&.current-menu-ancestor,
+		&.current-menu-parent,
+		&.current-menu-item {
+			>ul.sub-menu {
+				display: block;
+			}
+		}
+
+		&.current-product_cat-ancestor,
+		&.current-menu-item {
+			>a {
+				color: $color-primary  !important;
+				font-weight: 400;
+			}
+		}
+
+	}
+}
+
+// Mobile bottom nav
+.clt-mobile-bottom-nav-menu {
+	position: fixed;
+	width: 100%;
+	bottom: -1px;
+	left: 0;
+	color: #8a8b8e;
+	background-color: $color-background;
+	padding: 0.625rem 1.25rem;
+	border-top: 1px solid $color-border;
+	z-index: 9999;
+	display: none;
+
+	.menu-item {
+		a {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			font-size: 0.5625rem;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: currentColor;
+			text-decoration: none;
+		}
+
+		i {
+			font-size: 1.375rem;
+		}
+	}
+
+	.wishlist_products_counter_number{
+		position: absolute;
+    top: 2px;
+    right: 7px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    color: #fff;
+    padding: 1px 5px;
+	}
+
+	@include media-breakpoint-down(lg) {
+		display: block;
+	}
+}

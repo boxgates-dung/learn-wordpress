@@ -1,0 +1,142 @@
+.clt-shop-page {
+  .woocommerce-info {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+
+    &::before{
+      display: none;
+    }
+  }
+
+  .woocommerce-breadcrumb{
+    display: none;
+  }
+
+  .woocommerce-result-count {
+    font-size: .8125rem;
+    margin-top: 12px;
+    max-width: 50%;
+    display: flex;
+    position: absolute;
+
+    &::before {
+      content: url('data:image/svg+xml; utf8, <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve"> <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon </metadata> <g><path d="M10,10v445.4h445.4V10H10z M410.9,410.9H54.5V54.5h356.4V410.9z M544.6,10v445.4H990V10H544.6z M945.5,410.9H589.1V54.5h356.4V410.9z M10,544.6V990h445.4V544.6H10z M410.9,945.5H54.5V589.1h356.4V945.5z M544.6,544.6V990H990V544.6H544.6z M945.5,945.5H589.1V589.1h356.4V945.5z"/></g> </svg>');
+      display: block;
+      height: 19px;
+      transform: scale(0.8);
+      width: 19px;
+      float: left;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .woocommerce-ordering {
+    select {
+      font-size: 0.8125rem;
+      border: none;
+      max-width: 200px;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .filter-button {
+    display: none;
+    font-size: .8125rem;
+    margin-top: 12px;
+    max-width: 50%;
+    position: absolute;
+
+    a {
+      color: $color-text;
+    }
+  }
+
+  .sidebar-mobile-header {
+    display: none;
+  }
+
+  @include media-breakpoint-down(md) {
+    .shop-sidebar.open {
+      transform: translateX(0);
+    }
+
+    .filter-button {
+      display: block;
+    }
+
+    .woocommerce-result-count {
+      display: none;
+    }
+
+    .sidebar-mobile-header {
+      display: block;
+    }
+
+    .shop-sidebar {
+      position: fixed;
+      overflow: visible;
+      box-sizing: border-box;
+      min-height: 1px;
+      opacity: 1;
+      visibility: inherit;
+      flex: 0 0 90%;
+      max-width: 90%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      margin-top: 0;
+      padding: 1.25rem 1.25rem 0;
+      background-color: #fff;
+      transform: translateX(-100%);
+      z-index: 10001;
+      border-right: solid 1px $color-border;
+      transition: transform .4s;
+      overflow-anchor: none;
+      touch-action: auto;
+      overflow-y: scroll;
+
+      @include media-breakpoint-down(lg) {
+        padding-bottom: 80px;
+      }
+
+      .sidebar-mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.875rem;
+        padding-bottom: 1.75rem;
+        border-bottom: 1px solid $color-border;
+      }
+
+      .entry-title {
+        font-size: .875rem;
+        margin-bottom: 0;
+      }
+
+      .close-sidebar {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .9375rem;
+        width: 1.875rem;
+        height: 1.875rem;
+        color: $color-text;
+        border: 1px solid $color-border;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .onsale {
+    display: none;
+  }
+
+
+  .clt-terms.clt-type-color{
+    height: 25px;
+    overflow: hidden;
+  }
+}

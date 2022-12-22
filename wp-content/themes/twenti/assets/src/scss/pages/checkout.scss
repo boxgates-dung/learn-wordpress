@@ -1,0 +1,201 @@
+.woocommerce-form-coupon-toggle {
+  .woocommerce-info {
+    border-top: 0;
+    font-size: .895rem;
+
+    a {
+      color: $color-text-desc;
+    }
+
+    &::before {
+      color: $color-primary;
+      position: absolute;
+      left: 15px;
+      top: 48%;
+      transform: translateY(-50%);
+      text-rendering: auto;
+      font-family: "klbtheme";
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: 0.2em;
+      text-align: center;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1em;
+      content: '\f097';
+    }
+  }
+}
+
+form.checkout_coupon.woocommerce-form-coupon {
+  border: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  text-align: left;
+  border-radius: 0;
+
+  .form-row-first,
+  .form-row-last {
+    width: 100%;
+  }
+
+  .button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: inherit;
+    padding: 0.5rem 0.9375rem;
+    border-radius: 2px;
+    font-weight: 500;
+
+    background-color: $color-primary;
+    color: $color-background;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.woocommerce-checkout {
+  textarea#order_comments {
+    min-height: 130px;
+  }
+
+  table.shop_table {
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 9px 0;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  .col2-set {
+    margin-bottom: 20px;
+  }
+
+  #payment {
+    background: transparent;
+
+    a {
+      color: $color-primary;
+    }
+
+    ul.payment_methods {
+      padding: 0;
+    }
+
+    div.form-row {
+      padding: 10px 0;
+    }
+
+    #place_order {
+      margin-top: 20px;
+      background-color: $color-primary;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 2px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .woocommerce-info {
+      background-color: transparent;
+      border-top: none;
+      padding: 0 0 30px 0;
+      font-size: 14px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    div.payment_box{
+      background-color: transparent;
+      margin: 0;
+      padding: 0.85rem 0;
+      font-size: 0.85rem;
+
+      &::before{
+        display: none;
+      }
+    }
+  }
+}
+
+// Thank you page
+.woocommerce{
+  .woocommerce-thankyou-order-received {
+    margin-bottom: 30px;
+    padding: 3%;
+    width: 100%;
+    border: 2px dashed $color-success;
+    color: $color-success;
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.4;
+  }
+  
+  ul.order_details {
+    padding: 0;
+    margin: 0 0 1em;
+  
+    li {
+      gap: 5px;
+      display: flex;
+      width: 100%;
+      float: left;
+      margin-right: 0;
+      text-transform: capitalize;
+      font-size: 16px;
+      line-height: 1;
+      border-right: none;
+      padding-right: 0;
+      margin-left: 0;
+      padding-left: 0;
+      list-style-type: none;
+      align-items: center;
+  
+      strong {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  .woocommerce-order-details__title {
+    font-size: 18px;
+  }
+  
+  .wc-item-meta {
+    padding: 0;
+  }
+  
+  .order_details {
+    a {
+      color: $color-primary;
+      text-decoration: none;
+  
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  
+  section.woocommerce-order-details {
+    th, td  {
+      border: 1px solid #ddd;
+      padding: 9px 12px !important;
+    }
+  }
+}

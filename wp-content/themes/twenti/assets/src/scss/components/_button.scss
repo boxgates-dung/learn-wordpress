@@ -1,0 +1,222 @@
+button,
+.button,
+input[type=submit],
+.submit,
+.btn {
+  font-weight: 500;
+  border: 1px solid $color-form-border;
+  cursor: pointer;
+
+  i {
+    position: relative;
+    font-size: 1.125rem;
+    margin-left: .625rem;
+    top: 1px;
+  }
+
+  &:hover {
+    color: #fff;
+    border-color: $color-form-active;
+    background-color: $color-form-active;
+  }
+
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &.transparent {
+    background-color: transparent !important;
+
+    &.btn-white {
+      border-color: #000;
+
+      &:hover {
+        background-color: #000 !important;
+      }
+    }
+
+    &.btn-primary {
+      color: $color-primary;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-primary !important;
+      }
+    }
+
+    &.btn-secondary {
+      color: $color-text-desc;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-text-desc !important;
+      }
+    }
+
+    &.btn-success {
+      color: $color-success;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-success !important;
+      }
+    }
+
+    &.btn-warning {
+      color: $color-warning;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-warning !important;
+      }
+    }
+
+    &.btn-danger {
+      color: $color-danger;
+
+      &:hover {
+        color: #fff;
+        background-color: $color-danger !important;
+      }
+    }
+  }
+
+  &.square {
+    border-radius: 0;
+  }
+
+  &.rounded {
+    border-radius: 3.75rem !important;
+  }
+
+  &.btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $color-text-desc;
+    border-color: $color-text-desc;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-third {
+    background-color: $color-text-desc;
+    border-color: $color-text-desc;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-info {
+    background-color: $color-info;
+    border-color: $color-info;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-success {
+    background-color: $color-success;
+    border-color: $color-success;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-danger {
+    background-color: $color-danger;
+    border-color: $color-danger;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-warning {
+    background-color: $color-warning;
+    border-color: $color-warning;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &.btn-white {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+      border-color: #000;
+    }
+  }
+
+  &.btn-dark {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+
+    &:hover {
+      background-color: #444;
+      border-color: #444;
+
+    }
+  }
+
+  &.btn-red {
+    color: #ee403d;
+    border-color: currentColor;
+
+    &:hover {
+      color: #fff;
+      background-color: #ee403d !important;
+    }
+  }
+
+  &.link {
+    font-size: 1rem;
+    height: auto;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    color: currentColor;
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &.icon-left {
+    i {
+      margin-left: 0;
+      margin-right: .625rem;
+    }
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.color-white{
+    color: #fff;
+  }
+
+  &.text-underline-none {
+    text-decoration: none;
+  }
+}

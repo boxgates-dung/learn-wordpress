@@ -1,0 +1,50 @@
+//customize to import bootstrap
+@import '~bootstrap/scss/bootstrap-utilities';
+@import 'variable';
+@import 'fonts';
+@import 'reset';
+@import 'iconfont';
+
+// Pages
+@import 'pages/404';
+@import 'pages/archive-product';
+@import 'pages/blog';
+@import 'pages/cart';
+@import 'pages/checkout';
+@import 'pages/my-account';
+@import 'pages/single-product';
+@import 'pages/whish-list.scss';
+
+// Components
+@import 'components/button';
+@import 'components/form';
+@import 'components/header';
+@import 'components/nav';
+@import 'components/canvas-menu';
+@import 'components/pagination';
+@import 'components/loop-product-content';
+@import "components/breadcrumb";
+@import "components/footer";
+@import 'components/notice';
+@import "components/woo";
+@import 'components/search-form';
+@import 'components/back-to-top';
+@import 'components/quick-view-product';
+@import 'components/quick-add-to-cart-variable';
+
+// Widgets
+@import 'widgets/widget-counter-banner';
+@import 'widgets/widget-coupon-text-banner';
+@import 'widgets/widget-category-slider';
+@import 'widgets/widget-offered-product';
+@import 'widgets/widget-review-slider';
+@import 'widgets/widget-product-categories';
+@import 'widgets/widget-filter-by-price';
+@import 'widgets/widget-filter-by-attribute';
+@import 'widgets/widget-recently-viewed-products';
+@import 'widgets/widget-banner-box';
+@import 'widgets/widget-icon-box';
+@import 'widgets/widget-product-carousel';
+@import 'widgets/widget-banner-slider';
+@import 'widgets/widget-back-to-top';
+@import 'widgets/widget-post-slider';

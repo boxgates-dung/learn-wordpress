@@ -1,0 +1,346 @@
+// Style login logout single page
+.clt-login-page,
+.clt-register-page {
+  .woocommerce-error {
+    list-style: none;
+    border: 1px solid $color-form-border;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 13px;
+    background-color: transparent;
+    max-width: 500px;
+    margin: 0 auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .clt-wrap {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 50px;
+    border: solid 1px $color-form-border;
+    border-radius: 3px;
+  }
+
+  .form-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  label,
+  p,
+  p a {
+    font-size: 14px;
+  }
+
+  .form-row label {
+    margin-bottom: 5px;
+  }
+
+  a {
+    color: $color-danger;
+    text-decoration: none;
+
+    &:hover {
+      color: #0a58ca;
+
+    }
+  }
+
+  label.error {
+    color: $color-danger;
+  }
+}
+
+// Start my-account page style
+.woocommerce {
+
+  h2,
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  // Navigation menu
+  .woocommerce-MyAccount-navigation {
+    border: 1px solid $color-border;
+    border-radius: 2px;
+    box-shadow: 5px 5px 0 #f8f8f8;
+
+    li {
+      border-top: 1px solid $color-border;
+      list-style: none;
+
+      &:first-child {
+        border-top: none;
+      }
+    }
+
+    a {
+      display: block;
+      color: currentColor;
+      text-decoration: none;
+      padding: 0.625rem 1.5625rem;
+    }
+
+    li.is-active>a {
+      color: #fff;
+      background-color: $color-primary;
+    }
+  }
+
+  //woocommerce MyAccount content
+  .woocommerce-MyAccount-content {
+    padding-left: 1.25rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 30px;
+      padding-left: 0;
+    }
+
+    @include media-breakpoint-down(md) {
+      .woocommerce-orders-table__cell {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    a {
+      color: $color-primary;
+    }
+
+    .woocommerce-info {
+      border: none;
+      color: $color-text;
+      font-size: 16px;
+      padding: 0;
+      background-color: transparent;
+      line-height: 40px;
+      align-items: center;
+      gap: 10px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .woocommerce-message {
+      border: 1px solid #dee2e6;
+      margin-bottom: 1.875rem;
+      margin-top: 1.875rem;
+      padding: 1rem;
+      font-size: .875rem;
+    }
+
+    .button {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-background;
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      float: left;
+      margin-right: 5px;
+
+      &:hover {
+        color: $color-background;
+        background-color: $color-primary;
+        border-color: $color-primary;
+        opacity: 0.6;
+      }
+
+      &.view {
+        height: 30px;
+      }
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    .woocommerce-Pagination {
+      display: flex;
+      gap: 5px;
+    }
+
+    .woocommerce-button--previous,
+    .woocommerce-button--next {
+      min-width: 100px;
+    }
+  }
+
+  // My account Content Order
+  table.my_account_orders {
+    td {
+      height: 50px;
+    }
+  }
+
+  .woocommerce-button--previous.button,
+  .woocommerce-button--previous.button {
+    min-width: 120px !important;
+  }
+
+  .woocommerce-order-details {
+    table.shop_table {
+      th,
+      td {
+        padding: 9px 0px;
+        font-size: 16px;
+      }
+
+      td {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .woocommerce-customer-details {
+    address {
+      border: none;
+      line-height: 2;
+      padding: 0;
+    }
+
+    .woocommerce-customer-details--phone {
+      margin-bottom: 5px;
+    }
+  }
+
+  // My account Content Address
+  .addresses {
+    .title {
+      .edit {
+        float: left;
+      }
+    }
+
+    address {
+      line-height: 1.8;
+    }
+  }
+
+  #edit-address {
+    h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+
+  // My account Content detail
+  .edit-account {
+    em {
+      font-weight: 400;
+    }
+
+    legend {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+  }
+
+  // My account login logout
+  .form-row {
+    label {
+      font-size: 0.875rem;
+      margin-bottom: 5px;
+    }
+  }
+
+  #customer_login {
+    h2 {
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+
+    .u-column2,
+    .u-column1 {
+      float: left;
+      margin-bottom: 15px;
+      padding: 0 15px;
+      max-width: 100%;
+    }
+  }
+
+  form.login,
+  form.register {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    .woocommerce-form-login__rememberme {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      background-color: $color-primary;
+      border-color: $color-primary;
+      color: $color-background;
+      text-decoration: none;
+      font-weight: 500;
+      width: 100%;
+    }
+
+    .lost_password {
+      a {
+        color: $color-primary;
+      }
+    }
+
+    .woocommerce-privacy-policy-text {
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      padding: 0 2px;
+    }
+  }
+
+  // Lost password
+  .lost_reset_password {
+    border: 1px solid #d3ced2;
+    padding: 20px;
+    text-align: left;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 0 auto;
+
+    .form-row {
+      width: 100%;
+    }
+
+    .woocommerce-Button,
+    .button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 15px;
+      line-height: inherit;
+      padding: 0.5rem 0.9375rem;
+      border-radius: 2px;
+      color: $color-background;
+      background-color: $color-primary;
+      width: 100%;
+
+      &:hover {
+        color: $color-background;
+        opacity: 0.6;
+        background-color: $color-primary;
+      }
+    }
+  }
+}
