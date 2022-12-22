@@ -1,0 +1,48 @@
+.quick-add-to-cart {
+  .pa_color {
+    display: none;
+  }
+
+  .clt-type-color{
+    max-height: 78px;
+    overflow: hidden;
+  }
+
+  .btn-quick-add-to-cart, .product_type_simple, .hasSize {
+    background-color: #000 !important;
+    color: #fff !important;
+    text-align: center;
+    display: flex !important;
+    gap: 5px;
+    align-items: center;
+    font-weight: 500 !important;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .disabled{
+    opacity: 0.5;
+  }
+
+  .added_to_cart{
+    display: none;
+  }
+
+  .clt-terms{
+    height: 25px;
+  }
+
+  form{
+    height: 95px;
+    position: relative;
+    overflow: hidden;
+
+    .button{
+      position: absolute;
+      bottom: 0;
+      width: 100%
+    }
+  }
+}

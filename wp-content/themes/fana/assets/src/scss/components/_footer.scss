@@ -1,0 +1,19 @@
+.footer {
+  ul {
+    li{
+      list-style: none;
+      line-height: 22px;
+      padding-top: 5px;
+    }
+  }
+
+  a{
+    color: $color-text;
+  }
+
+  .current-menu-item{
+    a{
+      color: $color-text-desc;
+    }
+  }
+}

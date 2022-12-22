@@ -1,0 +1,129 @@
+// Form elements
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea,
+select,
+.form-control,
+.form-select,
+button,
+.button,
+input[type=submit],
+.submit,
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-primary;
+  font-size: 15px;
+  line-height: inherit;
+  padding: .5rem .9375rem;
+  height: $size-form-height;
+  border-radius: 2px;
+
+  &::placeholder {
+    color: $color-form-placeholder;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+input[type=color],
+input[type=date],
+input[type=datetime-local],
+input[type=datetime],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea,
+select,
+.form-control,
+.form-select {
+  width: 100%;
+  border: 1px solid $color-form-border;
+
+  &:focus,
+  &:active {
+    border-color: $color-form-active;
+    box-shadow: none;
+  }
+
+  &.line {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+select {
+  cursor: pointer;
+  appearance: none;
+  background: #fff url("data:image/svg+xml;utf8,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6 9L12 15L18 9' stroke='currentColor' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>") calc(100% - 5px) 12px no-repeat;
+  background-size: 18px 15px;
+  padding-right: 1.875rem;
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+label.error {
+  color: $color-danger;
+}
+
+.select2-container--default {
+  .select2-selection--single {
+    display: inline-flex;
+    align-items: center;
+    letter-spacing: -0.03px;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid $color-border;
+    font-size: 15px;
+    line-height: inherit;
+    padding: 0.5rem 0.9375rem;
+    height: 42px;
+    border-radius: 2px;
+  }
+}
+
+.select2-container--default {
+  .select2-selection--single {
+    .select2-selection__arrow {
+      height: 26px;
+      position: absolute;
+      top: 10px;
+      right: 1px;
+      width: 20px;
+    }
+  }
+}

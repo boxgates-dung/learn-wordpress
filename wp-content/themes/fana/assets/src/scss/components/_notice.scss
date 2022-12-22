@@ -1,0 +1,17 @@
+#notice {
+	overflow: hidden;
+
+	.swal2-container.swal2-top-end {
+		top: inherit !important;
+	}
+	.swal2-toast{
+		overflow: clip;
+		.swal2-title {
+			width: auto;
+		}
+	}
+
+	a{
+		color: $color-text;
+	}
+}

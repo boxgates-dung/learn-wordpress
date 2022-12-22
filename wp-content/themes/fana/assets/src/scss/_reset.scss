@@ -1,0 +1,103 @@
+html {
+	font-size: 100%;
+}
+
+img {
+	height: auto;
+	image-rendering: -webkit-optimize-contrast;
+}
+
+body {
+	font-family: $font-primary;
+	font-weight: 400;
+	letter-spacing: -0.03px;
+	color: $color-text;
+	background-color: $color-background;
+}
+
+.admin-bar{
+	#quick-view-model{
+    padding-top: 15px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+	font-family: $font-primary;
+	letter-spacing: 0;
+}
+
+h2,
+h3 {
+	font-size: 2.375rem;
+	margin-bottom: 0.9375rem;
+	font-weight: 500;
+}
+
+h4,
+h5 {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+a {
+	text-decoration: none;
+	color: $color-primary;
+}
+
+ul {
+	padding-left: 0;
+}
+
+blockquote {
+	border-left: 4px solid $color-border;
+	padding: 1.25rem 1.875rem 0.75rem 1.875rem;
+	margin: 1.875rem auto ;
+}
+
+.aligncenter img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.alignwide img {
+	width: 100%;
+	height: auto;
+}
+
+.alignfull {
+	max-width: none;
+	margin-left: -25%;
+	margin-right: -60%;
+}
+
+.alignright {
+	float: right;
+	margin: 0 0 1em 1em;
+	clear: both;
+}
+
+.alignleft {
+	float: left;
+	margin: 0 1em 1em 0;
+	clear: both;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
