@@ -1,10 +1,8 @@
-// eslint-disable-next-line no-undef
 const webpack = require( 'webpack' )
 const WebpackBar = require( 'webpackbar' )
 const path = require( 'path' )
 const MiniCssExtractPlugin = require( 'mini-css-extract-plugin' )
 const CssMinimizerPlugin = require( 'css-minimizer-webpack-plugin' )
-// const FixStyleOnlyEntriesPlugin = require( 'webpack-fix-style-only-entries' )
 const RemoveEmptyScriptsPlugin = require( 'webpack-remove-empty-scripts' )
 const ESLintPlugin = require( 'eslint-webpack-plugin' )
 const ImageMinimizerPlugin = require( 'image-minimizer-webpack-plugin' )
